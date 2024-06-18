@@ -30,7 +30,7 @@ function displayTask(task) {
 
   const removeBtn = document.createElement("button");
   removeBtn.textContent = "Remove";
-  removeBtn.style.marginLeft = "10px";
+  removeBtn.className = "remove-btn";
   removeBtn.addEventListener("click", () => {
     taskList.removeChild(li);
     removeTask(task);
